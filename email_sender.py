@@ -1,10 +1,7 @@
 import boto3
 def send_email(emailAddress):
     # Set up AWS credentials directly (not recommended for production)
-    aws_access_key_id = 'AKIA25T6P2GFFEBD4CO7'
-    aws_secret_access_key = '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'
-    aws_region = 'us-east-1'
-
+    
     # Initialize the SES client
     ses_client = boto3.client('ses', region_name=aws_region, aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
 
