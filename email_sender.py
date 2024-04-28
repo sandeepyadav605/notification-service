@@ -1,10 +1,6 @@
 import boto3
 def send_email(emailAddress):
-    # Set up AWS credentials directly (not recommended for production)
     
-    # Initialize the SES client
-    ses_client = boto3.client('ses', region_name=aws_region, aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
-
     # Set up the email parameters
     # Set up the email parameters
     sender = 'info@elogicals.com'
